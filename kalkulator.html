@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investasi Dari Nol</title>
+    <link rel="stylesheet" href="CSS/stayls.css">
+</head>
+<body>
+    <!-- =========================================== -->
+    <!-- NAVBAR (MENU NAVIGASI)-->
+    <!-- =========================================== -->
+
+     <nav class="navigasi">
+        <div class="isi-navigasi">
+            <a class="logo" href="index.html">Edukasi Investasi Smart</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instrumen.html">Instrumental</a></li>
+                <li><a href="profilresiko.html">Profil Resiko</a></li>
+                <li><a href="kalkulator.html">kalkulator</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+     </nav>
+ 
+    <!-- ============================================ -->
+    <!-- HEADER HALAMAN KALKULATOR -->
+    <!-- ============================================ -->
+    <header class="header">
+        <div class="wadah">
+            <h1 class="judul-header">Kalkulator Investasi</h1>
+            <p class="deskripsi-header">Hitung potensi hasil Anda dengan mudah dan cepat.
+            Rencanakan keuangan lebih baik untuk masa depan yang lebih cerah.</p>
+        </div>
+    </header>
+ 
+    <!-- ============================================ -->
+    <!-- SECTION KALKULATOR INVESTASI  -->
+    <!-- ============================================ -->
+
+    <section class="kalkulator">
+        <div class="wadah">
+            <h2 class="judul-kalkulator">Kalkulator Investasi</h2>
+            <p class="deskripsi-kalkulator">
+                Simulasikan pertumbuhan investasi Anda dengan mudah dan akurat.
+            </p>
+ 
+            <div class="grid-2">
+                <form id="formKalkulator" class="form-kalkulator">
+                    <div class="grup-input">
+                        <label for="modalAwal" class="label-form">Modal Awal (Rp)</label>
+                        <input type="number" id="modalAwal" class="input-form" placeholder="Contoh: 5000000">
+                    </div>
+                    <div class="grup-input">
+                        <label for="setoranBulanan" class="label-form">Setoran per Bulan (Rp)</label>
+                        <input type="number" id="setoranBulanan" class="input-form" placeholder="Contoh: 500000">
+                    </div>
+                    <div class="grup-input">
+                        <label for="bungaTahunan" class="label-form">Estimasi Keuntungan per Tahun (%)</label>
+                        <input type="number" id="bungaTahunan" class="input-form" placeholder="Contoh: 8">
+                    </div>
+                    <div class="grup-input">
+                        <label for="lamaTahun" class="label-form">Lama Investasi (Tahun)</label>
+                        <input type="number" id="lamaTahun" class="input-form" placeholder="Contoh: 10">
+                    </div>
+                    <button type="button" id="btnHitung" class="btn-hitung">Hitung Simulasi</button>
+                </form>
+ 
+                
+                <div id="hasilKalkulator" class="hasil-kalkulator">
+                    <p class="teks-hasil">Total Yang di Investasikan : <span id="hasilTotalSetoran">Rp 0</span></p>
+                    <p class="teks-hasil">Estimasi  Total Keuntungan: <span id="hasilKeuntungan">Rp 0</span></p>
+                    <p class="teks-hasil">Estimasi Total Investasimu: <span id="hasilNilaiAkhir">Rp 0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- =============================================== -->
+    <!-- FOOTER (Bagian Bawah Website) -->
+    <!-- =============================================== -->
+    <footer class="footer-area">
+        <div class="wadah">
+            <div class="grid-2">
+                <div>
+                    <h3 class="judul-footer">Edukasi Investasi</h3>
+                    <p class="teks-footer">
+                        Website edukasi dasar investasi untuk pemula. Dibuat sebagai proyek
+                        belajar HTML, CSS, dan JavaScript.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="judul-footer">Catatan</h3>
+                    <p class="teks-footer">
+                        Seluruh konten bersifat edukasi, bukan saran finansial profesional.
+                        Selalu lakukan riset sebelum berinvestasi.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bawah">
+                <p>&copy; 2026 Edukasi Investasi untuk Pemula</p>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="kalkulator.js"></script>
+</body>
+</html>

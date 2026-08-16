@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investasi Dari Nol</title>
+    <link rel="stylesheet" href="CSS/stayls.css">
+</head>
+<body>
+    <!-- NAVBAR (MENU NAVIGASI)-->
+     <nav class="navigasi">
+        <div class="wadah isi-navigasi">
+            <a class="logo" href="index.html">Edukasi Investasi Smart</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instrumen.html">Instrumental</a></li>
+                <li><a href="profilresiko.html">Profil Resiko</a></li>
+                <li><a href="kalkulator.html">kalkulator</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+     </nav>
+
+     <!--  -->
+     <!--  -->
+     <!--  -->
+    <header class="header-halaman">
+    <div class="wadah">
+      <h1 class="judul-halaman">Hubungi Kami</h1>
+      <p class="deskripsi-halaman">Ada pertanyaan atau masukan? Kirimkan 
+        pesanmu lewat form di bawah ini.</p>
+    </div>
+  </header>
+<!--  -->
+<!--  -->
+<!--  -->
+<section class="kontak">
+    <div class="wadah">
+      <h2 class="judul-section">Kirim Pesan</h2>
+      <p class="deskripsi-section">Formulir ini bersifat simulasi untuk keperluan tugas.</p>
+ 
+      <div class="form-tengah">
+        <div id="pesanBerhasil" class="pesan-berhasil">
+          Pesanmu berhasil dikirim (simulasi). Terima kasih sudah menghubungi kami!
+        </div>
+ 
+        <form id="formKontak" class="form-kontak">
+          <div class="grup-input">
+            <label for="namaInput" class="label-form">Nama Lengkap</label>
+            <input type="text" id="namaInput" class="input-form" placeholder="Masukkan nama lengkapmu">
+            <p id="errorNama" class="pesan-error">Nama minimal harus 3 huruf.</p>
+          </div>
+ 
+          <div class="grup-input">
+            <label for="emailInput" class="label-form">Email</label>
+            <input type="email" id="emailInput" class="input-form" placeholder="nama@email.com">
+            <p id="errorEmail" class="pesan-error">Masukkan alamat email yang benar.</p>
+          </div>
+ 
+          <div class="grup-input">
+            <label for="pesanInput" class="label-form">Pesan</label>
+            <textarea id="pesanInput" class="input-form" rows="5" placeholder="Tulis pertanyaan atau masukanmu di sini..."></textarea>
+            <p id="errorPesan" class="pesan-error">Pesan minimal harus 10 huruf.</p>
+          </div>
+ 
+          <button type="button" id="btnKirim" class="btn-hitung">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

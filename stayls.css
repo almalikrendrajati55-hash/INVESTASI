@@ -1,0 +1,613 @@
+/* =========================================================
+   CSS SEDERHANA UNTUK WEBSITE EDUKASI INVESTASI
+   File ini dipakai bareng oleh semua halaman (index, instrumen,
+   profilresiko, kontak, kalkulator)
+   ========================================================= */
+ 
+/* =========================================================
+   WARNA & PENGATURAN DASAR
+   ========================================================= */
+:root {
+  --biru-tua: #003474;
+  --hijau: #01923b;
+  --putih: #ffffffed;
+  --biru-terang: #e3f0fc;
+  --abu-teks: #475569;
+  --abu-terang: #f8fafc; /* sebelumnya kepake tapi belum pernah didefinisikan */
+  --garis: #d0d1d1;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f0f7fe;
+}
+ 
+/* Banyak dipake di banyak section */
+.wadah {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ 
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+.navigasi {
+  background-color: var(--biru-tua);
+  padding: 15px 0;
+}
+ 
+.isi-navigasi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 5px 5px;
+}
+ 
+.logo {
+  color: var(--putih);
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+}
+ 
+.navigasi ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+}
+ 
+.navigasi ul a {
+  color: var(--putih);
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+ 
+.navigasi ul a:hover {
+  color: #fafa04;
+}
+ 
+/* ========================================================
+   HERO (BANNER UTAMA DI HOME)
+   ======================================================== */
+.hero {
+  background-color: var(--biru-tua);
+  color: #fcfcfa;
+  padding: 70px 0;
+  text-align: center;
+}
+ 
+.wadah-hero {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ 
+.judul-hero {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+ 
+.deskripsi-hero {
+  font-size: 17px;
+  color: #d7e2ec;
+  margin-bottom: 26px;
+}
+ 
+.button-belajar {
+  display: inline-block;
+  background-color: var(--hijau);
+  color: var(--putih);
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ 
+/* =========================================================
+   SECTION PENGERTIAN INVESTASI (DI HOME)
+   ========================================================= */
+.pengertian {
+  padding: 50px 0;
+  background-color: var(--abu-terang);
+}
+ 
+.judul-pengertian {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--biru-tua);
+  text-align: center;
+  margin-bottom: 20px;
+}
+ 
+.kotak-investasi {
+  background-color: var(--putih);
+  border: 2px solid var(--garis);
+  border-radius: 10px;
+  padding: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+ 
+/* dulu nama selector-nya salah ketik (.kotak-pengertian p),
+   makanya paragraf di box "Apa itu Investasi" nggak pernah kestyle */
+.kotak-investasi p {
+  color: var(--abu-teks);
+  margin-bottom: 16px;
+}
+ 
+.tautan-pengertian {
+  color: var(--hijau);
+  font-weight: bold;
+  text-decoration: none;
+}
+ 
+.tautan-pengertian:hover {
+  text-decoration: underline;
+}
+ 
+/* =========================================================
+   SECTION FITUR (KARTU PREVIEW DI HOME)
+   ========================================================= */
+.fitur {
+  padding: 30px 0;
+}
+ 
+/* .judul-section dipakai berulang di banyak halaman sebagai judul section */
+.judul-section {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--biru-tua);
+  text-align: center;
+  margin-bottom: 10px;
+}
+ 
+/* .deskripsi dipakai untuk subjudul section (di bawah judul-section)
+   MAUPUN teks di dalam card-fitur, jadi disatuin biar nggak tabrakan */
+.deskripsi {
+  text-align: center;
+  color: var(--abu-teks);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  word-wrap: break-word;
+}
+ 
+/* .grid-4 = kartu tersusun otomatis 4 kolom di layar besar */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ 
+.card-fitur {
+  background-color: var(--putih);
+  border: 2px solid var(--garis);
+  border-radius: 30px;
+  padding: 24px;
+  text-align: center;
+}
+ 
+.judul-card {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--biru-tua);
+  margin-bottom: 8px;
+}
+ 
+.tautan-fitur {
+  color: var(--hijau);
+  font-weight: bold;
+  text-decoration: none;
+}
+ 
+.tautan-fitur:hover {
+  text-decoration: underline;
+}
+ 
+/* ==========================================================
+   HALAMAN INSTRUMEN
+   ========================================================== */
+.instrumen {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+ 
+.instrumen h1 {
+  color: var(--biru-tua);
+  font-size: 28px;
+}
+ 
+.instrumen > p {
+  color: var(--abu-teks);
+  max-width: 650px;
+  margin: 12px auto 30px auto;
+}
+ 
+/* .kotak-pengertian = daftar kartu ringkasan 6 instrumen di bagian atas halaman */
+.kotak-pengertian {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; /* Jarak antar kartu */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f5f9;
+  border-radius: 16px;
+}
+ 
+.card {
+  background-color: var(--biru-terang);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+}
+ 
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--biru-tua);
+}
+ 
+.card p {
+  font-size: 16px;
+  color: var(--abu-teks);
+  margin-bottom: 12px;
+}
+ 
+.card a {
+  font-size: 18px;
+  color: var(--hijau);
+  font-weight: bold;
+  text-decoration: none;
+}
+ 
+.card a:hover {
+  text-decoration: underline;
+}
+ 
+/* Section detail tiap instrumen (id="detail-saham", dst) diberi
+lebar maksimal + garis pemisah antar section supaya rapi dibaca */
+section[id^="detail-"] {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--putih);
+  border-bottom: 2px solid var(--garis);
+  border-radius: 15px;
+}
+ 
+section[id^="detail-"] h2 {
+  color: var(--biru-tua);
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--biru-terang);
+}
+ 
+section[id^="detail-"] h3 {
+  color: var(--biru-tua);
+  margin-top: 26px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+section[id^="detail-"] p,
+section[id^="detail-"] li {
+  color: var(--abu-teks);
+  font-size: 15px;
+}
+ 
+section[id^="detail-"] ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+ 
+section[id^="detail-"] iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+ 
+/* =========================================================
+   HALAMAN PROFIL RISIKO: MANAJEMEN RISIKO
+  ========================================================== */
+.materi {
+  padding: 50px 0;
+}
+ 
+/* .grid-3 = kartu tersusun otomatis 3 kolom di layar besar */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+ 
+.card-profilresiko {
+  background-color: var(--putih);
+  border: 2px solid var(--garis);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+ 
+.isi-card {
+  color: var(--abu-teks);
+}
+ 
+/* ========================================================
+   HALAMAN PROFIL RISIKO: QUIZ
+   ======================================================== */
+.quiz {
+  padding: 50px 0;
+}
+ 
+.judul-quiz {
+  color: var(--biru-tua);
+  text-align: center;
+}
+ 
+.deskripsi-quiz {
+  color: var(--abu-teks);
+  text-align: center;
+  padding-bottom: 12px;
+}
+ 
+.kartu-quiz {
+  background-color: var(--putih);
+  border: 2px solid var(--garis);
+  border-radius: 10px;
+  padding: 28px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+ 
+.pertanyaan-quiz {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--garis);
+}
+ 
+.teks-pertanyaan {
+  font-weight: bold;
+  color: var(--biru-tua);
+  margin-bottom: 8px;
+}
+ 
+.pilihan-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  color: var(--abu-teks);
+}
+ 
+.button-quiz {
+  background-color: var(--hijau);
+  color: var(--putih);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+ 
+.button-quiz:hover {
+  background-color: #17924b;
+}
+ 
+/* ==========================================================
+   HALAMAN KONTAK & KALKULATOR (form)
+   ========================================================== */
+.kalkulator {
+  padding: 50px 0;
+}
+ 
+.judul-kalkulator {
+  color: var(--biru-tua);
+  text-align: center;
+}
+ 
+.deskripsi-kalkulator {
+  color: var(--abu-teks);
+  text-align: center;
+}
+ 
+.hasil-kalkulator {
+  background-color: var(--biru-tua);
+  color: var(--putih);
+  border-radius: 10px;
+  padding: 26px;
+}
+ 
+.teks-hasil {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--putih);
+}
+ 
+/* .grid-2 = 2 kolom sejajar di layar besar, dipakai di footer dan kalkulator */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+ 
+/* kotak form putih, dipakai bareng sama form kalkulator & form kontak */
+.form-kalkulator,
+.form-kontak {
+  background-color: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 10px;
+  padding: 26px;
+}
+ 
+.grup-input {
+  margin-bottom: 16px;
+}
+ 
+.label-form {
+  display: block;
+  font-weight: bold;
+  color: var(--biru-tua);
+  margin-bottom: 6px;
+}
+ 
+.input-form {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--garis);
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+ 
+.input-form:focus {
+  outline: none;
+  border-color: var(--hijau);
+}
+ 
+.btn-hitung {
+  background-color: var(--hijau);
+  color: var(--putih);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+ 
+.btn-hitung:hover {
+  background-color: #17924b;
+}
+ 
+.pesan-berhasil {
+  background-color: #e4f8ed;
+  color: var(--hijau);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 18px;
+  display: none;
+}
+ 
+.pesan-error {
+  color: #c23a2e;
+  font-size: 13px;
+  margin-top: 4px;
+  display: none;
+}
+ 
+/* ===========================================
+  HALAMAN LAIN (profilresiko, kalkulator, kontak) - HEADER
+  ============================================ */
+.header-halaman {
+  background-color: var(--biru-tua);
+  color: var(--putih);
+  padding: 45px 0;
+  text-align: center;
+}
+ 
+.judul-halaman {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+ 
+.deskripsi-halaman {
+  color: #d7e2ec;
+  max-width: 600px;
+  margin: 0 auto;
+}
+ 
+/* ===========================================
+  KONTAK
+  ============================================ */
+.kontak {
+  padding: 50px 0;
+}
+ 
+.deskripsi-section {
+  text-align: center;
+  color: var(--abu-teks);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+ 
+.form-tengah {
+  max-width: 550px;
+  margin: 0 auto;
+}
+ 
+/* ========================================================
+   FOOTER
+   ======================================================== */
+.footer-area {
+  background-color: var(--biru-tua);
+  color: #c7d4e0;
+  padding: 36px 0 16px 0;
+}
+ 
+.judul-footer {
+  color: var(--putih);
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+ 
+.teks-footer {
+  color: #c7d4e0;
+}
+ 
+.footer-bawah {
+  border-top: 2px solid #f5f7f8;
+  margin-top: 18px;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 13px;
+}
+ 
+/* =========================================================
+   RESPONSIVE: LAYAR HP
+   ========================================================= */
+@media (max-width: 700px) {
+  .isi-navigasi {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .navigasi ul {
+    margin-top: 10px;
+  }
+}
